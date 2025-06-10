@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  database:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: mandantenportal
+      MYSQL_USER: portal_user
+      MYSQL_PASSWORD: password123
+    ports:
+      - '3306:3306'
